@@ -1,0 +1,13 @@
+<ri-ng-deck
+  [width]="width"
+  [height]="height"
+  [longitude]="longitude"
+  [latitude]="latitude"
+  [zoom]="zoom"
+  [minZoom]="minZoom"
+  [maxZoom]="maxZoom"
+  [pitch]="pitch"
+  [bearing]="bearing"
+  [layers]="layers"
+  (onWebGLInitialized)="_initialize($event)"
+></ri-ng-deck>

@@ -1,0 +1,14 @@
+<ri-gmaps [(viewport)]="viewport">
+  <ri-ng-deck-overlay
+    [width]="viewport.width"
+    [height]="viewport.height"
+    [longitude]="viewport.longitude"
+    [latitude]="viewport.latitude"
+    [zoom]="viewport.zoom"
+    [minZoom]="viewport.minZoom"
+    [maxZoom]="viewport.maxZoom"
+    [pitch]="viewport.pitch"
+    [bearing]="viewport.bearing"
+    [data]="data"
+  ></ri-ng-deck-overlay>
+</ri-gmaps>

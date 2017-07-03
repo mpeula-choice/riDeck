@@ -1,0 +1,13 @@
+<ri-webgl-renderer
+  [id]="id"
+  [width]="width || viewport.width"
+  [height]="height || viewport.height"
+  [gl]="gl"
+  [debug]="debug"
+  [viewport]="{x: 0, y: 0, width: width || viewport.width, height: height || viewport.height}"
+  (onRendererInitialized)="_onRendererInitialized($event)"
+  (onNeedRedraw)="_onNeedRedraw($event)"
+  (onRenderFrame)="_onRenderFrame($event)"
+  (onMouseMove)="_onMouseMove($event)"
+  (onClick)="_onClick($event)"
+></ri-webgl-renderer>
